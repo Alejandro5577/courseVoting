@@ -1,14 +1,15 @@
 # courseVoting
 Smart Contract en Solidity para votación de propuestas con calificación de 1 a 5
 
-## TÍTULO: Adaptación de "Smart Contract de votación de propuestas" a encuesta de materia universitaria con calificaciones del 1 al 5 
+## Adaptación de "Smart Contract de votación de propuestas" a encuesta de materia universitaria con calificaciones del 1 al 5 
 
-## Universidad Torcuato Di Tella. 
+## Materia: Blockchain, Negocios y Web3.0
+## Modalidad EMBA22 - Universidad Torcuato Di Tella
 
-## CURSO: Blockchain, Negocios y Web3.0
-## PROFESOR: Pablo Roccatagliata
-## CURSO: EMBA22
-## ALUMNOS:
+## Profesor: 
+- Pablo Roccatagliata
+
+## Alumnos:
 - Javier Castiarena 
 - Emiliano Merenda
 - Alejandro Palarich
@@ -32,7 +33,7 @@ Smart Contract en Solidity para votación de propuestas con calificación de 1 a
 
 # DOCUMENTACIÓN CÓDIGO
 ## VARIABLES
-- token: Del usuario que va a votar
+- *token*: Del usuario que va a votar
 - votingStart: Datetime inicio votación
 - votingEnd: Datetime fin votación
 - proposalCount: Cantidad de proposals
