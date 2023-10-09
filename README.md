@@ -44,19 +44,9 @@ Smart Contract en Solidity para votación de propuestas con calificación de 1 a
 - **DESDE_HOY_A_INICIO_VOTACION_DIAS**: Permite desfasar el tiempo entre el lanzamiento del contrato y el inicio de la votación
 
 ## STRUCTURES
-- **Proposal**:  {
-        string title;
-        string description;
-        uint256 votes;
-        uint256 totalSatisfaction;
-    }
+- **Proposal**:  { string title; string description; uint256 votes; uint256 totalSatisfaction; }: LLeva el registro de las propuestas
 
-- **Voto** {
-        address voter;
-        uint8 satisfaction; 
-        uint256 proposalId; 
-    }
-
+- **Voto** { address voter; uint8 satisfaction;  uint256 proposalId;}: Lleva el registro de votos
 
 ## MÉTODOS
 
