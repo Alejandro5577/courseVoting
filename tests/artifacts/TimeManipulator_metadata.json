@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getCurrentTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dias",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseTime",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/TimeManipulator.sol": "TimeManipulator"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"tests/TimeManipulator.sol": {
+			"keccak256": "0x6ced21f6916492443b15f7217c2d16176e0c3cfd83020da23c1db86a89a38dde",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d4385944fef93a092c662a4fd22554055a456d335a84df5e6fab26ffc43d6c42",
+				"dweb:/ipfs/QmWpbFWCcsbcri9JvYRkwSQZWoESsZ127sCLxLxRtVmyGs"
+			]
+		}
+	},
+	"version": 1
+}
