@@ -33,25 +33,25 @@ Smart Contract en Solidity para votación de propuestas con calificación de 1 a
 
 # DOCUMENTACIÓN CÓDIGO
 ## VARIABLES
-- *token*: Del usuario que va a votar
-- votingStart: Datetime inicio votación
-- votingEnd: Datetime fin votación
-- proposalCount: Cantidad de proposals
-- votesCount: Cantidad de votes, es el último voteId en realidad
+- **token**: Del usuario que va a votar
+- **votingStart**: Datetime inicio votación
+- **votingEnd**: Datetime fin votación
+- **proposalCount**: Cantidad de proposals
+- **votesCount**: Cantidad de votes, es el último voteId en realidad
 
 ## CONSTANTES
-- DURACION_VOTACION_DIAS = 5
-- DESDE_HOY_A_INICIO_VOTACION_DIAS: Permite desfasar el tiempo entre el lanzamiento del contrato y el inicio de la votación
+- **DURACION_VOTACION_DIAS** = 5
+- **DESDE_HOY_A_INICIO_VOTACION_DIAS**: Permite desfasar el tiempo entre el lanzamiento del contrato y el inicio de la votación
 
 ## STRUCTURES
-- Proposal:  {
+- **Proposal**:  {
         string title;
         string description;
         uint256 votes;
         uint256 totalSatisfaction;
     }
 
-- Voto {
+- **Voto** {
         address voter;
         uint8 satisfaction; 
         uint256 proposalId; 
@@ -60,18 +60,18 @@ Smart Contract en Solidity para votación de propuestas con calificación de 1 a
 
 ## MÉTODOS
 
-- constructor(address _tokenAddress): Cuando se lanza el contracto asigna la variable token y los tiempos de votingStart y votingEnd
+- **constructor**(address _tokenAddress): Cuando se lanza el contracto asigna la variable token y los tiempos de votingStart y votingEnd
 
-- registerVoter(address _address): Registra a la address como votante
+- **registerVoter**(address _address): Registra a la address como votante
 
-- createProposal( string memory _title, string memory _description ): Registra una propuesta en la estructura correspondiente, con un título y una descripción. Por ejemplo: Calidad de la bibliografía, puntualidad del profesor, puntaje global de la materia.
+- **createProposal**( string memory _title, string memory _description ): Registra una propuesta en la estructura correspondiente, con un título y una descripción. Por ejemplo: Calidad de la bibliografía, puntualidad del profesor, puntaje global de la materia.
 
-- voteProposal(uint256 _proposalId, uint8 _satisfaction): Crear una votación con un nivel de satisfacción para una proposalId. Previamente realiza las validaciones correspondientes, de tiempo, que la calificación sea de 1 a 5 y qu el votante no haya votado previamente esta propueta.
+- **voteProposal**(uint256 _proposalId, uint8 _satisfaction): Crear una votación con un nivel de satisfacción para una proposalId. Previamente realiza las validaciones correspondientes, de tiempo, que la calificación sea de 1 a 5 y qu el votante no haya votado previamente esta propueta.
 
-- votoExistente(address _voter, uint256 _proposalId): Verifica si un votante ya votó una proposalId
+- **votoExistente**(address _voter, uint256 _proposalId): Verifica si un votante ya votó una proposalId
 
-- getVote(address _voter, uint256 _proposalId): Información de cierto voto, a partir del votantes y la propuesta
+- **getVote**(address _voter, uint256 _proposalId): Información de cierto voto, a partir del votantes y la propuesta
 
-- getAvgSatisfaction(uint256 _proposalId): Devuelve la parte entera y decimal del promedio de calificaciones de una propuesta
+- **getAvgSatisfaction**(uint256 _proposalId): Devuelve la parte entera y decimal del promedio de calificaciones de una propuesta
 
 
